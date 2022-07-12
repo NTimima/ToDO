@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/drawable-v24/button.xml" value="0.1525" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/drawable-v24/done.xml" value="0.1525" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/drawable-v24/dot.xml" value="0.1525" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/drawable-v24/m_priority.xml" value="0.1525" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/drawable-v24/priority.xml" value="0.1525" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/layout/activity_add_todo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/timim/AndroidStudioProjects/Project_with_Ozar/app/src/main/res/layout/main_screen.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

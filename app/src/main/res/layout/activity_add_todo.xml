@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_transparency"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="30sp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/viewshka"
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#B6ABAB"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/vopros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewshka"
+                android:text="What is to be done?"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#3F51B5"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <EditText
+                android:id="@+id/add_todo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vopros"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30sp"
+                android:hint="Enter task here"
+                android:paddingStart="15dp"
+                android:textColorHint="#7C7979"
+                />
+
+            <TextView
+                android:id="@+id/vopros2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_todo"
+                android:text="What is the description?"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:textColor="#3F51B5"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <EditText
+                android:id="@+id/add_description"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vopros2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30sp"
+                android:hint="Add a description"
+                android:paddingStart="15dp"
+                android:textColorHint="#7C7979"/>
+
+            <View
+                android:id="@+id/viewsh"
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_description"
+                android:layout_marginTop="18dp"
+                android:background="#EAE4E4"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewsh"
+                android:layout_marginTop="18dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priority"
+                    android:textSize="20dp"
+                    android:textColor="#595252"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="0.7"/>
+
+                <Button
+                    android:id="@+id/low_priority"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/priority"
+                    />
+                <Button
+                    android:id="@+id/medium_priority"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/m_priority"/>
+                <Button
+                    android:id="@+id/high_priority"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/h_priority"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/add_priority"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30sp"
+                android:hint="low/medium/high"
+                android:paddingStart="15dp"
+                android:textColorHint="#7C7979" />
+
+            <ImageButton
+                android:id="@+id/done_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/button"
+                android:src="@drawable/done"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
